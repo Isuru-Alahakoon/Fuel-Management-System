@@ -403,6 +403,24 @@
     .footer-column ul li a:hover {
         color: white;
     }
+
+    .app-badge {
+        display: inline-block;
+        padding: 10px 18px;
+        background: rgba(255,255,255,0.1);
+        color: white;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 0.9rem;
+        border: 1px solid rgba(255,255,255,0.2);
+        transition: all 0.3s ease;
+    }
+
+    .app-badge:hover {
+        background: rgba(255,255,255,0.2);
+        color: white;
+    }
     
     .footer-bottom {
         border-top: 1px solid rgba(255,255,255,0.1);
@@ -651,9 +669,9 @@
             <div class="footer-column">
                 <h3>Download Our App</h3>
                 <p>Get the full Sri Drive experience on your mobile device.</p>
-                <div style="margin-top: 15px;">
-                    <a href="#" style="display: inline-block; margin-right: 10px;"><img src="images/app-store.png" alt="App Store" style="height: 40px;"></a>
-                    <a href="#"><img src="images/play-store.png" alt="Play Store" style="height: 40px;"></a>
+                <div style="margin-top: 15px; display: flex; gap: 10px; flex-wrap: wrap;">
+                    <a href="#" class="app-badge">App Store</a>
+                    <a href="#" class="app-badge">Google Play</a>
                 </div>
             </div>
         </div>
